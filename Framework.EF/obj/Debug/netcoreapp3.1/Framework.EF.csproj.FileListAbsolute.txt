@@ -1,0 +1,12 @@
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Framework.EF.deps.json
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Framework.EF.dll
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Framework.EF.pdb
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.csprojAssemblyReference.cache
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.AssemblyInfoInputs.cache
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.AssemblyInfo.cs
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.csproj.CoreCompileInputs.cache
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.dll
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.pdb
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Framework.EF.runtimeconfig.json
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Framework.EF.runtimeconfig.dev.json
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.genruntimeconfig.cache

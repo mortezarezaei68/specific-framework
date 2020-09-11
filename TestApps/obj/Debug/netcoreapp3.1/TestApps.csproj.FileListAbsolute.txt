@@ -1,0 +1,13 @@
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/bin/Debug/netcoreapp3.1/TestApps
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/bin/Debug/netcoreapp3.1/TestApps.deps.json
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/bin/Debug/netcoreapp3.1/TestApps.runtimeconfig.json
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/bin/Debug/netcoreapp3.1/TestApps.runtimeconfig.dev.json
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/bin/Debug/netcoreapp3.1/TestApps.dll
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/bin/Debug/netcoreapp3.1/TestApps.pdb
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/obj/Debug/netcoreapp3.1/TestApps.csprojAssemblyReference.cache
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/obj/Debug/netcoreapp3.1/TestApps.AssemblyInfoInputs.cache
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/obj/Debug/netcoreapp3.1/TestApps.AssemblyInfo.cs
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/obj/Debug/netcoreapp3.1/TestApps.csproj.CoreCompileInputs.cache
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/obj/Debug/netcoreapp3.1/TestApps.dll
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/obj/Debug/netcoreapp3.1/TestApps.pdb
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/obj/Debug/netcoreapp3.1/TestApps.genruntimeconfig.cache
