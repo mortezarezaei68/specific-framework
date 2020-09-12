@@ -29,20 +29,20 @@ namespace MicroServiceWebApplication1
         {
             services.AddControllersWithViews();
             services.DatabaseCustomization(Configuration);
-            services.AddMassTransit(x =>
-            {
-                x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
-                {
-                    // configure health checks for this bus instance
-                    cfg.UseHealthCheck(provider);
-
-                    cfg.Host("rabbitmq://localhost");
-
-                }));
-            });
-
-            services.AddMassTransitHostedService();
-            services.AddControllers();
+            services.AddRabbit(Configuration);
+            // services.AddMassTransit(x =>
+            // {
+            //     x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
+            //     {
+            //         // configure health checks for this bus instance
+            //         cfg.UseHealthCheck(provider);
+            //
+            //         cfg.Host("rabbitmq://localhost");
+            //
+            //     }));
+            // });
+            //
+            // services.AddMassTransitHostedService();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

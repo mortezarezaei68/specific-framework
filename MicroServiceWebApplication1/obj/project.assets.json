@@ -1738,7 +1738,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.7",
           "Pomelo.EntityFrameworkCore.MySql": "3.1.1",
-          "Pomelo.EntityFrameworkCore.MySql.Design": "1.1.2"
+          "Pomelo.EntityFrameworkCore.MySql.Design": "1.1.2",
+          "RabbitMQ.Client": "6.2.1"
         },
         "compile": {
           "bin/placeholder/Framework.EF.dll": {}

@@ -10,3 +10,6 @@
 /media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Framework.EF.runtimeconfig.json
 /media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Framework.EF.runtimeconfig.dev.json
 /media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.genruntimeconfig.cache
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Microsoft.Extensions.ObjectPool.dll
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/bin/Debug/netcoreapp3.1/Microsoft.Extensions.ObjectPool.xml
+/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/Debug/netcoreapp3.1/Framework.EF.csproj.CopyComplete
