@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5hUsth1FQ4mcsjMqR/7Ml+xfMgsVU8Fk2SKFLELur0U7aqs8/6nlFBuAAZGZrNFdM3v5OuMCeW3CqFA4JYr/lg==",
+  "dgSpecHash": "q6S9OfsroR+iWgVNbICctXzwZ9KhHHRwRWHCpFAzLmckdHSwEtgFeOE8LylPKx493pqWnAulKXxdma8Z1orPNg==",
   "success": true,
-  "projectFilePath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/MicroServiceWebApplication1/MicroServiceWebApplication1.csproj",
+  "projectFilePath": "/home/morteza/MyFrameworks/MyFramewoks/MicroServiceWebApplication1/MicroServiceWebApplication1.csproj",
   "expectedPackageFiles": [
     "/home/morteza/.nuget/packages/automatonymous/5.0.1/automatonymous.5.0.1.nupkg.sha512",
     "/home/morteza/.nuget/packages/greenpipes/4.0.0/greenpipes.4.0.0.nupkg.sha512",
@@ -10,6 +10,8 @@
     "/home/morteza/.nuget/packages/masstransit.aspnetcore/7.0.4/masstransit.aspnetcore.7.0.4.nupkg.sha512",
     "/home/morteza/.nuget/packages/masstransit.extensions.dependencyinjection/7.0.4/masstransit.extensions.dependencyinjection.7.0.4.nupkg.sha512",
     "/home/morteza/.nuget/packages/masstransit.rabbitmq/7.0.4/masstransit.rabbitmq.7.0.4.nupkg.sha512",
+    "/home/morteza/.nuget/packages/mediatr/7.0.0/mediatr.7.0.0.nupkg.sha512",
+    "/home/morteza/.nuget/packages/mediatr.cqrs/1.0.1/mediatr.cqrs.1.0.1.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

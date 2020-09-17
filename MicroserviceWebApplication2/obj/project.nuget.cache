@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zy/1VGdTYW1QGp7b3kNw+/eX9EH9ulLhBNR9GTnwpFxgDYCmDfr04hMlYsDBuSwQQjEmuClaPqwH0qflaenviw==",
+  "dgSpecHash": "qWTqXGjh8yKaLHrWygqM6pMF3+qgVVWi3MsCvA57lyfB5DuI1h+aMEHCrdA/m0Wz8JsshNqZsla+nVnSEM1UEg==",
   "success": true,
-  "projectFilePath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/MicroserviceWebApplication2/MicroserviceWebApplication2.csproj",
+  "projectFilePath": "/home/morteza/MyFrameworks/MyFramewoks/MicroserviceWebApplication2/MicroserviceWebApplication2.csproj",
   "expectedPackageFiles": [
     "/home/morteza/.nuget/packages/automatonymous/5.0.1/automatonymous.5.0.1.nupkg.sha512",
     "/home/morteza/.nuget/packages/greenpipes/4.0.0/greenpipes.4.0.0.nupkg.sha512",

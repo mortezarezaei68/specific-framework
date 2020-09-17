@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PhCqAUnWzQPXA28Cx2CHaZs8TLzpJ6ZAEndTa9spdiDyqKADotJH9D7+p2/vXPTxmGfs/aY549u6U0Vx9fID+A==",
+  "dgSpecHash": "wIZguJSPZ6n7PcHe1oTU77BYv9plixme38PxO1q5RaryUC9pbTkr1sQhtp/0f9qjvb8C4ZFKqX67uwE4da+uDQ==",
   "success": true,
-  "projectFilePath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj",
+  "projectFilePath": "/home/morteza/MyFrameworks/MyFramewoks/Framework.EF/Framework.EF.csproj",
   "expectedPackageFiles": [
+    "/home/morteza/.nuget/packages/mediatr/7.0.0/mediatr.7.0.0.nupkg.sha512",
+    "/home/morteza/.nuget/packages/mediatr.cqrs/1.0.1/mediatr.cqrs.1.0.1.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

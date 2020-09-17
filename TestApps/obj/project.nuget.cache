@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1ro5gmnKSk5MIsjsh4YHWwjsGNO0RKf2QJJl39GSROXgB3Jb2FmZj9qwjyE6tHuxUNTV6wOhBKMEgZpDyAmuSQ==",
+  "dgSpecHash": "xgfo20LGa/mzvLOD9ek7VYeEZPZ+ciDRf37iR2G1Z22karXGvid0MEzq6P+C8kQYjEdMVaKcTfmLBob3x08F1Q==",
   "success": true,
-  "projectFilePath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/TestApps.csproj",
+  "projectFilePath": "/home/morteza/MyFrameworks/MyFramewoks/TestApps/TestApps.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

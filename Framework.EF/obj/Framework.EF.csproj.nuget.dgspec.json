@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj": {}
+    "/home/morteza/MyFrameworks/MyFramewoks/Framework.EF/Framework.EF.csproj": {}
   },
   "projects": {
-    "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj": {
+    "/home/morteza/MyFrameworks/MyFramewoks/Framework.EF/Framework.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj",
+        "projectUniqueName": "/home/morteza/MyFrameworks/MyFramewoks/Framework.EF/Framework.EF.csproj",
         "projectName": "Framework.EF",
-        "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj",
+        "projectPath": "/home/morteza/MyFrameworks/MyFramewoks/Framework.EF/Framework.EF.csproj",
         "packagesPath": "/home/morteza/.nuget/packages/",
-        "outputPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/obj/",
+        "outputPath": "/home/morteza/MyFrameworks/MyFramewoks/Framework.EF/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/morteza/.nuget/NuGet/NuGet.Config"
@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "MediatR.CQRS": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.7, )"

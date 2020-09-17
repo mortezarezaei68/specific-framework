@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/TestApps.csproj",
+      "projectUniqueName": "/home/morteza/MyFrameworks/MyFramewoks/TestApps/TestApps.csproj",
       "projectName": "TestApps",
-      "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/TestApps.csproj",
+      "projectPath": "/home/morteza/MyFrameworks/MyFramewoks/TestApps/TestApps.csproj",
       "packagesPath": "/home/morteza/.nuget/packages/",
-      "outputPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/TestApps/obj/",
+      "outputPath": "/home/morteza/MyFrameworks/MyFramewoks/TestApps/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/morteza/.nuget/NuGet/NuGet.Config"
