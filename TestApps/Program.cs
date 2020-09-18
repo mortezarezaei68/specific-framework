@@ -8,21 +8,29 @@ namespace TestApps
     {
         static void Main(string[] args)
         {
-            string a = "AaBb";
-            object x=new X();
-            object x2=new X();
+            var x=new X();
+            var m=new X();
             var y=new Y();
-            Console.WriteLine(x2);
+            var d=new Y();
+            if (y == d)
+            {
+                Console.WriteLine("is true");
+            }
+
+
         }
     }
+    
 
-    public class X : Y
+    public struct X
     {
         
     }
 
     public class Y
     {
-        public string Test { get; set; }
+        
     }
+    
+    
 }
