@@ -2,14 +2,14 @@ using System;
 
 namespace Framework.EF.ContextFrameWork
 {
-    public abstract class Entity
+    public abstract class Entity<TKey>:EntityAudit
     {
-        public Guid Id { get; protected set; }
+        public TKey Id { get; }
         public bool IsDeleted { get; set; }
 
         public override bool Equals(object obj)
         {
-            var compareTo = obj as Entity;
+            var compareTo = obj as Entity<TKey>;
 
             if (ReferenceEquals(this, compareTo)) return true;
             if (compareTo is null) return false;
@@ -17,7 +17,7 @@ namespace Framework.EF.ContextFrameWork
             return Id.Equals(compareTo.Id);
         }
 
-        public static bool operator ==(Entity a, Entity b)
+        public static bool operator ==(Entity<TKey> a, Entity<TKey> b)
         {
             if (a is null && b is null)
                 return true;
@@ -28,9 +28,14 @@ namespace Framework.EF.ContextFrameWork
             return a.Equals(b);
         }
 
-        public static bool operator !=(Entity a, Entity b)
+        public static bool operator !=(Entity<TKey> a, Entity<TKey> b)
         {
             return !(a == b);
+        }
+        public void Delete()
+        {
+            IsDeleted = true;
+            DeletedAt = DateTime.UtcNow;
         }
 
         public override int GetHashCode()

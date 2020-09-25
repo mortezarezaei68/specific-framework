@@ -3,11 +3,10 @@ using Framework.EF.ContextFrameWork;
 
 namespace Framework.EF
 {
-    public class Customer:EntityAudit
+    public class Customer:AggregateRoot<Guid>
     {
-        public Customer(Guid id, string name, string email, DateTime birthDate)
+        public Customer( string name, string email, DateTime birthDate)
         {
-            Id = id;
             Name = name;
             Email = email;
             BirthDate = birthDate;

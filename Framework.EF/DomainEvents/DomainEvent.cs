@@ -7,6 +7,6 @@ namespace Framework.EF.DomainEvents
     {
         Guid Id => Guid.NewGuid();
         DateTime CreatedAt { get; set; }
-        string EventName { get; set; }
+        string EventName { get; }
     } 
 }
