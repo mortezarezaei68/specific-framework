@@ -12,14 +12,12 @@ namespace Framework.EF.ContextFrameWork
     public class UnitOfWork<TContext> : IUnitOfWork where TContext:DbContext
     {
         private readonly TContext _context;
-        private readonly IEventDispatcher _dispatcher;
         private IDbContextTransaction _currentTransaction;
         public bool HasActiveTransaction => _currentTransaction != null;
         public IDbContextTransaction GetCurrentTransaction() => _currentTransaction;
-        public UnitOfWork(TContext context, IEventDispatcher dispatcher)
+        public UnitOfWork(TContext context)
         {
             _context = context;
-            _dispatcher = dispatcher;
         }
 
         public async Task<IDbContextTransaction> BeginTransactionAsync()

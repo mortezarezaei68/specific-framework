@@ -8,10 +8,14 @@ namespace MicroServiceWebApplication1.Extensions
 {
     public static class EfCoreExtensions
     {
-        public static IServiceCollection AddEfCoreExtension(this IServiceCollection services, IConfiguration configuration)  
+        public static IServiceCollection AddEfCoreExtension(this IServiceCollection services)  
         {
             services.AddScoped<IUnitOfWork, UnitOfWork<ApplicationContextDb>>();
-            services.AddTransient(typeof(TransactionalCommandHandler<>));
+            services.Scan(scan => scan
+                .FromAssemblyOf<CreateCustomerCommandHandler>()
+                .AddClasses(classes => classes.AssignableTo(typeof(ICommandHandler<>)))
+                .AsImplementedInterfaces()
+                .WithScopedLifetime());
             return services;  
         }  
     }

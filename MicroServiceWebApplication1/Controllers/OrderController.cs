@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Framework.EF.Commands;
 using Framework.EF.DomainEvents;
 using Framework.EF.RabbitMq;
 using MicroServiceWebApplication1.Models;
@@ -11,21 +12,20 @@ namespace MicroServiceWebApplication1.Controllers
     [ApiController]
     public class OrderController:ControllerBase
     {
-        private readonly IRabbitManager _rabbit;
-        private readonly IEventDispatcher _dispatcher;
-        public OrderController(IRabbitManager rabbit, IEventDispatcher dispatcher)
+        private readonly ICommandBus _bus;
+        public OrderController(ICommandBus bus)
         {
-            _rabbit = rabbit;
-            _dispatcher = dispatcher;
+
+            _bus = bus;
         }
         [HttpPost]
-        public async Task<IActionResult> CreateOrder(Order order)
+        public async Task<IActionResult> CreateOrder(CreateCustomerCommand command)
         {
             // Uri uri=new Uri("rabbitmq://localhost/order_queue");
             // var endPoint = await _bus.GetSendEndpoint(uri);
             // await endPoint.Send<Order>(order);
             // _rabbit.Publish(order,"exchange.test","topic","*.queue.durable.#");
-            // _dispatcher.Dispatch();
+            await _bus.Dispatch(command);
             return Ok("success");
         }
     }

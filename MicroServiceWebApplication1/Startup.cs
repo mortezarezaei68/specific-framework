@@ -30,6 +30,8 @@ namespace MicroServiceWebApplication1
             services.AddControllersWithViews();
             services.DatabaseCustomization(Configuration);
             services.AddRabbit(Configuration);
+            services.BootstrapExtensionService();
+            services.AddEfCoreExtension();
             // services.AddMassTransit(x =>
             // {
             //     x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
