@@ -4,7 +4,7 @@ namespace Framework.EF.ContextFrameWork
 {
     public abstract class Entity<TKey>:EntityAudit
     {
-        public TKey Id { get; }
+        public TKey Id { get; set; }
         public bool IsDeleted { get; set; }
 
         public override bool Equals(object obj)

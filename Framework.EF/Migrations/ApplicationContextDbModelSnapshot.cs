@@ -19,7 +19,7 @@ namespace Framework.EF.Migrations
 
             modelBuilder.Entity("Framework.EF.Customer", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<string>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 

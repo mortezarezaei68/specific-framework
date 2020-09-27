@@ -15,8 +15,14 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
+          "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.CQRS/Framework.CQRS.csproj": {
+            "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.CQRS/Framework.CQRS.csproj"
+          },
           "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj": {
             "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj"
+          },
+          "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.Events/Framework.Events.csproj": {
+            "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.Events/Framework.Events.csproj"
           }
         }
       }

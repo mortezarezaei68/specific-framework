@@ -5,7 +5,9 @@ namespace Framework.EF
 {
     public class ApplicationContextDb:CoreDbContext
     {
-        public DbSet<Customer> Customers;
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<TestAggregate> Aggregates { get; set; }
+
         public ApplicationContextDb(DbContextOptions<ApplicationContextDb> options) : base(options)
         {
             

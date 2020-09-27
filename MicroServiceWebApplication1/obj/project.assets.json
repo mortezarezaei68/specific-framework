@@ -2315,6 +2315,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Framework.CQRS/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Framework.EF": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Framework.CQRS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Framework.CQRS.dll": {}
+        }
+      },
       "Framework.EF/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2330,6 +2343,19 @@
         },
         "runtime": {
           "bin/placeholder/Framework.EF.dll": {}
+        }
+      },
+      "Framework.Events/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Framework.CQRS": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Framework.Events.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Framework.Events.dll": {}
         }
       }
     }
@@ -7168,15 +7194,27 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Framework.CQRS/1.0.0": {
+      "type": "project",
+      "path": "../Framework.CQRS/Framework.CQRS.csproj",
+      "msbuildProject": "../Framework.CQRS/Framework.CQRS.csproj"
+    },
     "Framework.EF/1.0.0": {
       "type": "project",
       "path": "../Framework.EF/Framework.EF.csproj",
       "msbuildProject": "../Framework.EF/Framework.EF.csproj"
+    },
+    "Framework.Events/1.0.0": {
+      "type": "project",
+      "path": "../Framework.Events/Framework.Events.csproj",
+      "msbuildProject": "../Framework.Events/Framework.Events.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Framework.CQRS >= 1.0.0",
       "Framework.EF >= 1.0.0",
+      "Framework.Events >= 1.0.0",
       "MassTransit >= 7.0.4",
       "MassTransit.AspNetCore >= 7.0.4",
       "MassTransit.RabbitMQ >= 7.0.4",
@@ -7210,8 +7248,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.CQRS/Framework.CQRS.csproj": {
+              "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.CQRS/Framework.CQRS.csproj"
+            },
             "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj": {
               "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.EF/Framework.EF.csproj"
+            },
+            "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.Events/Framework.Events.csproj": {
+              "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/Framework.Events/Framework.Events.csproj"
             }
           }
         }

@@ -19,7 +19,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Framework.CQRS\Framework.CQRS.csproj" />
       <ProjectReference Include="..\Framework.EF\Framework.EF.csproj" />
+      <ProjectReference Include="..\Framework.Events\Framework.Events.csproj" />
     </ItemGroup>
 
 </Project>
