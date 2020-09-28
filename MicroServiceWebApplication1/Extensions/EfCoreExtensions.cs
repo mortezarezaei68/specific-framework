@@ -16,6 +16,7 @@ namespace MicroServiceWebApplication1.Extensions
                 .AddClasses(classes => classes.AssignableTo(typeof(ICommandHandler<>)))
                 .AsImplementedInterfaces()
                 .WithScopedLifetime());
+            services.AddTransient<ICustomerRepository, CustomerRepository>();
             return services;  
         }  
     }

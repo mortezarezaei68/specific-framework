@@ -30,6 +30,7 @@ namespace Framework.EF.Commands
                 _unitOfWork.RollbackTransaction();
                 throw new Exception(e.Message, e);
             }
+            
         }
     }
 }

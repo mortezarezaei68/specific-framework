@@ -27,15 +27,7 @@ namespace Framework.EF.ContextFrameWork
 
             return _currentTransaction;
         }
-
-        public async Task<IDbContextTransaction> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
-        {
-            if (_currentTransaction != null) return null;
-
-            _currentTransaction = await _context.Database.BeginTransactionAsync(IsolationLevel.ReadCommitted, cancellationToken: cancellationToken);
-
-            return _currentTransaction;
-        }
+        
 
         public async Task CommitAsync(IDbContextTransaction transaction)
         {
@@ -44,8 +36,8 @@ namespace Framework.EF.ContextFrameWork
 
             try
             {
-                await SaveChangesAsync();
-                transaction.Commit();
+                await _context.SaveChangesAsync();
+                await transaction.CommitAsync();
             }
             catch
             {

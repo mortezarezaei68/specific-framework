@@ -8,7 +8,6 @@ namespace Framework.EF.ContextFrameWork
     public interface IUnitOfWork : IDisposable
     {
         Task<IDbContextTransaction> BeginTransactionAsync();
-        Task<IDbContextTransaction> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken));
 
         Task CommitAsync(IDbContextTransaction transaction);
 
