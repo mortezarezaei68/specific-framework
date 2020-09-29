@@ -1,3 +1,4 @@
+using Framework.CQRS.CommandCustomize;
 using Framework.EF;
 using Framework.EF.Commands;
 using Framework.EF.ContextFrameWork;
@@ -13,7 +14,7 @@ namespace MicroServiceWebApplication1.Extensions
             services.AddScoped<IUnitOfWork, UnitOfWork<ApplicationContextDb>>();
             services.Scan(scan => scan
                 .FromAssemblyOf<CreateCustomerCommandHandler>()
-                .AddClasses(classes => classes.AssignableTo(typeof(ICommandHandler<>)))
+                .AddClasses(classes => classes.AssignableTo(typeof(ICommandHandlerCustomize<,>)))
                 .AsImplementedInterfaces()
                 .WithScopedLifetime());
             services.AddTransient<ICustomerRepository, CustomerRepository>();

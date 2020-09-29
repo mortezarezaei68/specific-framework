@@ -94,13 +94,13 @@
           "lib/netstandard2.0/MassTransit.RabbitMqTransport.dll": {}
         }
       },
-      "MediatR/7.0.0": {
+      "MediatR/8.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/MediatR.dll": {}
+          "lib/netstandard2.1/MediatR.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/MediatR.dll": {}
+          "lib/netstandard2.1/MediatR.dll": {}
         }
       },
       "MediatR.CQRS/1.0.1": {
@@ -339,6 +339,19 @@
           "lib/netstandard2.0/System.dll": {},
           "lib/netstandard2.0/mscorlib.dll": {},
           "lib/netstandard2.0/netstandard.dll": {}
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "8.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -2443,16 +2456,21 @@
         "mt-logo-small.png"
       ]
     },
-    "MediatR/7.0.0": {
-      "sha512": "sgfHxkBsmMlHOD564SnLqTvSbAuGlFiZfc6ybxBSI1wYV/2u+Y5TXtFoIhCISFg5/s/6aMvB338QC2JseHsjTA==",
+    "MediatR/8.1.0": {
+      "sha512": "KJFnA0MV83bNOhvYbjIX1iDykhwFXoQu0KV7E1SVbNA/CmO2I7SAm2Baly0eS7VJ2GwlmStLajBfeiNgTpvYzQ==",
       "type": "package",
-      "path": "mediatr/7.0.0",
+      "path": "mediatr/8.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "gradient_128x128.png",
         "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
         "lib/netstandard2.0/MediatR.dll",
-        "mediatr.7.0.0.nupkg.sha512",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.8.1.0.nupkg.sha512",
         "mediatr.nuspec"
       ]
     },
@@ -2579,6 +2597,19 @@
         "lib/netstandard2.0/netstandard.dll",
         "mediatr.cqrs.1.0.1.nupkg.sha512",
         "mediatr.cqrs.nuspec"
+      ]
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/8.1.0": {
+      "sha512": "kKJOHmdFKjd5hpk+RG1NXoGkZj9AYgXDCHui3Sx1OMIeBJEe0luG93JvOdLsghf7VQa2OX0Yi00sE39um4SMEw==",
+      "type": "package",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+        "mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
+        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -7218,6 +7249,7 @@
       "MassTransit >= 7.0.4",
       "MassTransit.AspNetCore >= 7.0.4",
       "MassTransit.RabbitMQ >= 7.0.4",
+      "MediatR.Extensions.Microsoft.DependencyInjection >= 8.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.5",
       "Microsoft.EntityFrameworkCore.Relational >= 3.1.8",
       "Pomelo.EntityFrameworkCore.MySql >= 3.1.2",
@@ -7280,6 +7312,10 @@
           "MassTransit.RabbitMQ": {
             "target": "Package",
             "version": "[7.0.4, )"
+          },
+          "MediatR.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[8.1.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

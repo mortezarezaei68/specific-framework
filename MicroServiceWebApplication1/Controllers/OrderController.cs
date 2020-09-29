@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Framework.CQRS.CommandCustomize;
 using Framework.EF.Commands;
 using Framework.EF.DomainEvents;
 using Framework.EF.RabbitMq;
@@ -12,8 +13,8 @@ namespace MicroServiceWebApplication1.Controllers
     [ApiController]
     public class OrderController:ControllerBase
     {
-        private readonly ICommandBus _bus;
-        public OrderController(ICommandBus bus)
+        private readonly IEventBus _bus;
+        public OrderController(IEventBus bus)
         {
 
             _bus = bus;
@@ -25,8 +26,8 @@ namespace MicroServiceWebApplication1.Controllers
             // var endPoint = await _bus.GetSendEndpoint(uri);
             // await endPoint.Send<Order>(order);
             // _rabbit.Publish(order,"exchange.test","topic","*.queue.durable.#");
-            await _bus.Dispatch(command);
-            return Ok("success");
+            var responseCommand=await _bus.Issue(command);
+            return Ok(responseCommand);
         }
     }
 }

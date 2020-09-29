@@ -11,9 +11,10 @@ namespace Framework.EF
             _context = context;
         }
 
-        public void Add(Customer customer)
+        public Customer Add(Customer customer)
         {
-            _context.Customers.Add(customer);
+             _context.Customers.Add(customer);
+             return customer;
         }
     }
 }

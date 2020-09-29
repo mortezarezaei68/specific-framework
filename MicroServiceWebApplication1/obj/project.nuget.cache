@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uKYwuJTYYNN3zxxsehk5Pz3/QVWK4AOAfQwN9CsXY0c5o5xLJIjWwCEI5ikc8xlrKJA3MYG/Ll3EB2IYzdiNig==",
+  "dgSpecHash": "wSdCWbMGmFaSoVGlUfV6DsOVPYERg5imjhILCrnWIPgQMiNxTBduISO3ZZLKiGVoaCEjwrIMxBaWiWc6ADJ34g==",
   "success": true,
   "projectFilePath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc4/AllFrameWorks/MicroServiceWebApplication1/MicroServiceWebApplication1.csproj",
   "expectedPackageFiles": [
@@ -10,8 +10,9 @@
     "/home/morteza/.nuget/packages/masstransit.aspnetcore/7.0.4/masstransit.aspnetcore.7.0.4.nupkg.sha512",
     "/home/morteza/.nuget/packages/masstransit.extensions.dependencyinjection/7.0.4/masstransit.extensions.dependencyinjection.7.0.4.nupkg.sha512",
     "/home/morteza/.nuget/packages/masstransit.rabbitmq/7.0.4/masstransit.rabbitmq.7.0.4.nupkg.sha512",
-    "/home/morteza/.nuget/packages/mediatr/7.0.0/mediatr.7.0.0.nupkg.sha512",
+    "/home/morteza/.nuget/packages/mediatr/8.1.0/mediatr.8.1.0.nupkg.sha512",
     "/home/morteza/.nuget/packages/mediatr.cqrs/1.0.1/mediatr.cqrs.1.0.1.nupkg.sha512",
+    "/home/morteza/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/8.1.0/mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "/home/morteza/.nuget/packages/microsoft.aspnetcore.authorization/2.2.0/microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
