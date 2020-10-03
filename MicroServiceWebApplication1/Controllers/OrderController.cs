@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using Framework.CQRS.CommandCustomize;
+using Framework.CQRS.MediatRCommands;
 using Framework.EF.Commands;
 using Framework.EF.DomainEvents;
 using Framework.EF.RabbitMq;

@@ -1,8 +1,7 @@
-using Framework.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace MicroServiceWebApplication1.Extensions
+namespace Framework.EF.Framework.Domain
 {
     public class ApplicationContextFactory : IDesignTimeDbContextFactory<ApplicationContextDb>
     {

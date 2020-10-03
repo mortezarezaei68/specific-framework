@@ -1,4 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Framework.EF.ContextFrameWork;
+using Framework.EF.Framework.Domain;
 
 namespace Framework.EF
 {
@@ -15,6 +20,11 @@ namespace Framework.EF
         {
              _context.Customers.Add(customer);
              return customer;
+        }
+
+        public async Task<IEnumerable<Customer>> GetMachCustomer(IEnumerable<Customer> customers)
+        {
+            return null;
         }
     }
 }

@@ -1,4 +1,5 @@
 using Framework.EF.ContextFrameWork;
+using Framework.EF.Framework.Domain;
 
 namespace Framework.EF
 {

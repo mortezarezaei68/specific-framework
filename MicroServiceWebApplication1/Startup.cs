@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MicroServiceWebApplication1.Extensions;
+using WebApplication.Extensions;
 
 namespace MicroServiceWebApplication1
 {

@@ -3,10 +3,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace Framework.EF.ContextFrameWork
+namespace Framework.EF.Framework.Domain
 {
     public interface IUnitOfWork : IDisposable
     {
+        bool HasActiveTransaction { get;}
         Task<IDbContextTransaction> BeginTransactionAsync();
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken));
 

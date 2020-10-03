@@ -1,6 +1,6 @@
 using System;
 
-namespace Framework.EF.ContextFrameWork
+namespace Framework.EF.Framework.Domain
 {
     public abstract class EntityAudit
     {

@@ -1,7 +1,8 @@
-using Framework.CQRS.CommandCustomize;
+using Framework.CQRS.MediatRCommands;
 using Framework.EF;
 using Framework.EF.Commands;
 using Framework.EF.ContextFrameWork;
+using Framework.EF.Framework.Domain;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,8 +14,8 @@ namespace MicroServiceWebApplication1.Extensions
         {
             services.AddScoped<IUnitOfWork, UnitOfWork<ApplicationContextDb>>();
             services.Scan(scan => scan
-                .FromAssemblyOf<CreateCustomerCommandHandler>()
-                .AddClasses(classes => classes.AssignableTo(typeof(ICommandHandlerCustomize<,>)))
+                .FromAssemblyOf<CreateCustomerTransactionalCommandHandler>()
+                .AddClasses(classes => classes.AssignableTo(typeof(ITransactionalCommandHandlerMediatR<,>)))
                 .AsImplementedInterfaces()
                 .WithScopedLifetime());
             services.AddTransient<ICustomerRepository, CustomerRepository>();

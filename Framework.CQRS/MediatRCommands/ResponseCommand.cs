@@ -1,7 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 
-namespace Framework.CQRS.CommandCustomize
+namespace Framework.CQRS.MediatRCommands
 {
     public class ResponseCommand
     {

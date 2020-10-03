@@ -1,12 +1,11 @@
 using System;
 using System.Data;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace Framework.EF.ContextFrameWork
+namespace Framework.EF.Framework.Domain
 {
     public class UnitOfWork<TContext> : IUnitOfWork where TContext:DbContext
     {

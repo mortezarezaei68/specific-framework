@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
@@ -8,29 +9,50 @@ namespace TestApps
     {
         static void Main(string[] args)
         {
-            var x=new X();
-            var m=new X();
-            var y=new Y();
-            var d=new Y();
-            if (y == d)
+            List<TestList> testLists=new List<TestList>
             {
-                Console.WriteLine("is true");
-            }
-
-
+                new TestList
+                {
+                    Email = "Test@Test.com",
+                    Name = "morteza",
+                    TimeValue = DateTime.Now
+                },
+                
+                new TestList
+                {
+                    Email = "Test@gmail.com",
+                    Name = "ali",
+                    TimeValue = DateTime.Now.AddDays(1)
+                },
+                new TestList
+                {
+                    Email = "Test@yahoo.com",
+                    Name = "morteza",
+                    TimeValue = DateTime.Now.AddDays(2)
+                }
+            };
+            List<TestList> testListsSub=new List<TestList>
+            {
+                
+                new TestList
+                {
+                    Email = "Test@Test.com",
+                    Name = "morteza",
+                    TimeValue = DateTime.Now
+                }
+            };
+        }
+        public class TestList
+        {
+            public string Name { get; set; }
+            public string Email { get; set; }
+            public DateTime TimeValue { get; set; }
+        }
+        public class Checker
+        {
         }
     }
     
-
-    public struct X
-    {
-        
-    }
-
-    public class Y
-    {
-        
-    }
     
     
 }

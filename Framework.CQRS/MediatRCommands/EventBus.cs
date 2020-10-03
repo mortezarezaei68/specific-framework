@@ -2,7 +2,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace Framework.CQRS.CommandCustomize
+namespace Framework.CQRS.MediatRCommands
 {
     public class EventBus:IEventBus
     {

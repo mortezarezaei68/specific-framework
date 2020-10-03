@@ -6,24 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace Framework.EF.ContextFrameWork
+namespace Framework.EF.Framework.Domain
 {
   public class CoreDbContext : DbContext
     {
         public CoreDbContext(DbContextOptions options) : base(options)
         {
         }
-        // public override int SaveChanges()
-        // {
-        //     OnBeforeSaving();
-        //     return base.SaveChanges();
-        // }
-
-        // public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        // {
-        //     OnBeforeSaving();
-        //     return await base.SaveChangesAsync(cancellationToken);
-        // }
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
         {

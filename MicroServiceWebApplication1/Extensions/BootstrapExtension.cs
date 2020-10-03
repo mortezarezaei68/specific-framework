@@ -1,12 +1,11 @@
 using System;
-using Framework.CQRS.CommandCustomize;
+using Framework.CQRS.MediatRCommands;
 using Framework.EF.Commands;
 using Framework.EF.DomainEvents;
 using MediatR;
-using MicroServiceWebApplication1.Controllers;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MicroServiceWebApplication1.Extensions
+namespace WebApplication.Extensions
 {
     public static class BootstrapExtension
     {
@@ -14,10 +13,10 @@ namespace MicroServiceWebApplication1.Extensions
         {
             services.AddScoped<IServiceLocator, ServiceLocator>();
             services.AddScoped<ICommandBus, CommandBus>();      
-            services.AddTransient(typeof(TransactionalCommandHandlerCustomize<,>));
+            services.AddTransient(typeof(TransactionalTransactionalCommandHandlerMediatR<,>));
             services.AddScoped<IEventBus, EventBus>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionalCommandHandlerCustomize<,>));
+            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionalTransactionalCommandHandlerMediatR<,>));
             return services;
         } 
     }

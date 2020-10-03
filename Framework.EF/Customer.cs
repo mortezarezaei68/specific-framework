@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using Framework.EF.ContextFrameWork;
+using Framework.EF.Framework.Domain;
 
 namespace Framework.EF
 {
@@ -11,6 +13,7 @@ namespace Framework.EF
             Email = email;
             BirthDate = birthDate;
         }
+        
 
         // Empty constructor for EF
         protected Customer() { }

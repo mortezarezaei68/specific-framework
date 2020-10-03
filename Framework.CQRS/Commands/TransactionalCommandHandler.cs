@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Framework.EF.ContextFrameWork;
+using Framework.EF.Framework.Domain;
 using Microsoft.Extensions.Logging;
 
 namespace Framework.EF.Commands

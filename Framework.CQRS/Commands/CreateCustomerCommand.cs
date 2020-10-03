@@ -1,5 +1,5 @@
 using System;
-using Framework.CQRS.CommandCustomize;
+using Framework.CQRS.MediatRCommands;
 using MediatR;
 
 namespace Framework.EF.Commands

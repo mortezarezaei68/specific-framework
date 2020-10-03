@@ -1,16 +1,17 @@
 using System.Threading;
 using System.Threading.Tasks;
-using Framework.CQRS.CommandCustomize;
+using Framework.CQRS.MediatRCommands;
 using Framework.EF.ContextFrameWork;
+using Framework.EF.Framework.Domain;
 using MediatR;
 
 namespace Framework.EF.Commands
 {
-    public class CreateCustomerCommandHandler:ICommandHandlerCustomize<CreateCustomerCommand,CreateCustomerResponseCommand>
+    public class CreateCustomerTransactionalCommandHandler:ITransactionalCommandHandlerMediatR<CreateCustomerCommand,CreateCustomerResponseCommand>
     {
         private readonly ICustomerRepository _repository;
 
-        public CreateCustomerCommandHandler(ICustomerRepository repository)
+        public CreateCustomerTransactionalCommandHandler(ICustomerRepository repository)
         {
             _repository = repository;
         }
