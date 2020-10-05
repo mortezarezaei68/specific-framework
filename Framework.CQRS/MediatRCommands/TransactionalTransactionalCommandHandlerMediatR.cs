@@ -30,15 +30,14 @@ namespace Framework.CQRS.MediatRCommands
                 }
                 var transaction = await _unitOfWork.BeginTransactionAsync();
 
-                    response = await next(); 
-                    await _unitOfWork.CommitAsync(transaction);
-                    await _unitOfWork.SaveChangesAsync();
-                    return response;
+                response = await next(); 
+                    
+                await _unitOfWork.CommitAsync(transaction);
+                return response;
             }
             catch (Exception ex)
             {
-
-                throw;
+                throw ex;
             }
         }
     }

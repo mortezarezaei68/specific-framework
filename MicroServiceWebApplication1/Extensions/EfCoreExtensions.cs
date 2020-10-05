@@ -1,6 +1,6 @@
+using Framework.CQRS;
 using Framework.CQRS.MediatRCommands;
 using Framework.EF;
-using Framework.EF.Commands;
 using Framework.EF.ContextFrameWork;
 using Framework.EF.Framework.Domain;
 using Microsoft.Extensions.Configuration;

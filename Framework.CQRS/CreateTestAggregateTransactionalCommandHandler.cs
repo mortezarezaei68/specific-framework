@@ -4,7 +4,7 @@ using Framework.CQRS.MediatRCommands;
 using Framework.EF;
 using MediatR;
 
-namespace Framework.CQRS.Commands
+namespace Framework.CQRS
 {
     public class CreateTestAggregateTransactionalCommandHandler:ITransactionalCommandHandlerMediatR<CreateTestAggregateCommand,CreateTestAggregateResponseCommand>
     {

@@ -1,7 +1,7 @@
 using Framework.CQRS.MediatRCommands;
 using MediatR;
 
-namespace Framework.CQRS.Commands
+namespace Framework.CQRS
 {
     public class CreateTestAggregateCommand:IRequest<CreateTestAggregateResponseCommand>
     {

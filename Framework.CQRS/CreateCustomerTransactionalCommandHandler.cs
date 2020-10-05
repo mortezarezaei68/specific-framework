@@ -1,12 +1,10 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Framework.CQRS.MediatRCommands;
-using Framework.EF.ContextFrameWork;
-using Framework.EF.Framework.Domain;
+using Framework.EF;
 using MediatR;
 
-namespace Framework.EF.Commands
+namespace Framework.CQRS
 {
     public class CreateCustomerTransactionalCommandHandler:ITransactionalCommandHandlerMediatR<CreateCustomerCommand,CreateCustomerResponseCommand>
     {

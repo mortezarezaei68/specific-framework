@@ -1,6 +1,6 @@
 using System;
+using Framework.CQRS.CommandBus;
 using Framework.CQRS.MediatRCommands;
-using Framework.EF.Commands;
 using Framework.EF.DomainEvents;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;

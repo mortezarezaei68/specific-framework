@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
+using Framework.CQRS;
 using Framework.CQRS.MediatRCommands;
-using Framework.EF.Commands;
 using Framework.EF.DomainEvents;
 using Framework.EF.RabbitMq;
 using MicroServiceWebApplication1.Models;

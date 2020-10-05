@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Framework.EF.Commands
+namespace Framework.CQRS.CommandBus
 {
     public interface ICommandHandler<in TCommand>
     {

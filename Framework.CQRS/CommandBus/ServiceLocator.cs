@@ -1,6 +1,6 @@
 using System;
 
-namespace Framework.EF.DomainEvents
+namespace Framework.CQRS.CommandBus
 {
     public class ServiceLocator : IServiceLocator
     {

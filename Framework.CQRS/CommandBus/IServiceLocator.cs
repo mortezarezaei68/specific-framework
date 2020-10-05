@@ -1,4 +1,4 @@
-namespace Framework.EF.DomainEvents
+namespace Framework.CQRS.CommandBus
 {
     public interface IServiceLocator
     {

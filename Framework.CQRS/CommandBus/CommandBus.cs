@@ -1,7 +1,6 @@
 using System.Threading.Tasks;
-using Framework.EF.DomainEvents;
 
-namespace Framework.EF.Commands
+namespace Framework.CQRS.CommandBus
 {
     public class CommandBus : ICommandBus
     {

@@ -1,8 +1,10 @@
 using System.Threading;
 using System.Threading.Tasks;
+using Framework.EF.DomainEvents;
+using Framework.EF.DomainEvents.DomainEventAbstract;
 using Microsoft.Extensions.Logging;
 
-namespace Framework.EF.DomainEvents.DomainEventAbstract
+namespace Framework.Events.DomainEvents.DomainEventAbstract
 {
     public class ChangedStatusCustomerDomainEventHandler:IDomainEventHandler<ChangedStatusCustomerDomainEvent>
     {
