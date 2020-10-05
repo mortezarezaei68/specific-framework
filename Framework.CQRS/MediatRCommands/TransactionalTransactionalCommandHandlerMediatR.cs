@@ -32,6 +32,7 @@ namespace Framework.CQRS.MediatRCommands
 
                     response = await next(); 
                     await _unitOfWork.CommitAsync(transaction);
+                    await _unitOfWork.SaveChangesAsync();
                     return response;
             }
             catch (Exception ex)
