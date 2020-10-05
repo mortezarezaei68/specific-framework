@@ -1,2 +1,2 @@
-# MyFramework
-.net core microservice framework
+# .net core Microservice framework
+created with special patterns
