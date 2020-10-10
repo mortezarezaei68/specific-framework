@@ -1,5 +1,5 @@
 using System;
-using Framework.CQRS.CommandBus;
+using Framework.CQRS.DecoratorCommandBus;
 using Framework.CQRS.MediatRCommands;
 using Framework.EF.DomainEvents;
 using MediatR;
@@ -15,6 +15,7 @@ namespace WebApplication.Extensions
             services.AddScoped<ICommandBus, CommandBus>();      
             services.AddTransient(typeof(TransactionalTransactionalCommandHandlerMediatR<,>));
             services.AddScoped<IEventBus, EventBus>();
+            services.AddScoped<IEventDispatcher, EventDispatcher>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionalTransactionalCommandHandlerMediatR<,>));
             return services;

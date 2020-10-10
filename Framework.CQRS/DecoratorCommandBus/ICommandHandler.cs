@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Framework.CQRS.CommandBus
+namespace Framework.CQRS.DecoratorCommandBus
 {
     public interface ICommandHandler<in TCommand>
     {

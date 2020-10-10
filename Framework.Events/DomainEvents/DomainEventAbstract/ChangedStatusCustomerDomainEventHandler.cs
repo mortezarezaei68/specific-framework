@@ -15,9 +15,10 @@ namespace Framework.Events.DomainEvents.DomainEventAbstract
             _loggerFactory = loggerFactory;
         }
 
-        public async Task Handle(ChangedStatusCustomerDomainEvent notification, CancellationToken cancellationToken)
+        public  Task Handle(ChangedStatusCustomerDomainEvent notification, CancellationToken cancellationToken)
         {
             _loggerFactory.CreateLogger<ChangedStatusCustomerDomainEvent>().LogTrace("test data");
+            return Task.CompletedTask;
         }
     }
 }

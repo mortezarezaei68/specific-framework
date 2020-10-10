@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Framework.EF.Framework.Domain;
 
-namespace Framework.CQRS.CommandBus
+namespace Framework.CQRS.DecoratorCommandBus
 {
     public class TransactionalCommandHandler<TCommand>:ICommandHandler<TCommand>
     {
