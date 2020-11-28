@@ -3,7 +3,7 @@ using Microsoft.Extensions.ObjectPool;
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 
-namespace Framework.EF.RabbitMq
+namespace Framework.Events.RabbitMq
 {
     public class RabbitModelPooledObjectPolicy : IPooledObjectPolicy<IModel>
     {
@@ -23,10 +23,7 @@ namespace Framework.EF.RabbitMq
 
         public bool Return(IModel obj)
         {
-            if (obj.IsOpen)
-            {
-                return true;
-            }
+            if (obj.IsOpen) return true;
 
             obj?.Dispose();
             return false;

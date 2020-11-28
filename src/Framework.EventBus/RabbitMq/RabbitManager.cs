@@ -1,10 +1,11 @@
 using System;
 using System.Text;
+using Framework.EF.RabbitMq;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 
-namespace Framework.EF.RabbitMq
+namespace Framework.Events.RabbitMq
 {
     public class RabbitManager : IRabbitManager
     {

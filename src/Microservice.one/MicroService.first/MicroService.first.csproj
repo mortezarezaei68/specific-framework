@@ -21,8 +21,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Framework.EventBus\Framework.EventBus.csproj" />
-      <ProjectReference Include="..\Framework.CQRS\Framework.CQRS.csproj" />
       <ProjectReference Include="..\Framework.EF\Framework.EF.csproj" />
+      <ProjectReference Include="..\Product.Model.Command\Product.Model.Command.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Extensions" />
     </ItemGroup>
 
 </Project>

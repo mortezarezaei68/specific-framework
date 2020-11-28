@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+      <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="3.1.9" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.2" />
+      <PackageReference Include="Scrutor" Version="3.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EventBase\EventBase.csproj" />
+      <ProjectReference Include="..\Product.Service.Persistance\Product.Service.Persistance.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using Framework.CQRS;
 using Framework.CQRS.MediatRCommands;
 using Microsoft.AspNetCore.Mvc;
+using Product.Service.CQRS.AddProductCommand;
 
 namespace MicroServiceWebApplication1.Controllers
 {
@@ -17,13 +18,13 @@ namespace MicroServiceWebApplication1.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateOrder(CreateCustomerCommand command)
+        public async Task<IActionResult> CreateOrder(CreateProductCommandRequest commandRequest)
         {
             // Uri uri=new Uri("rabbitmq://localhost/order_queue");
             // var endPoint = await _bus.GetSendEndpoint(uri);
             // await endPoint.Send<Order>(order);
             // _rabbit.Publish(order,"exchange.test","topic","*.queue.durable.#");
-            var responseCommand = await _bus.Issue(command);
+            var responseCommand = await _bus.Issue(commandRequest);
             return Ok(responseCommand);
         }
     }

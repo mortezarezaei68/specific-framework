@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MediatR.CQRS" Version="1.0.1" />
+      <PackageReference Include="MediatR" Version="9.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
@@ -21,13 +21,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Migrations" />
+      <Folder Include="Framework.Domain" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="Microsoft.Extensions.ObjectPool, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
-        <HintPath>..\..\..\..\..\usr\share\dotnet\packs\Microsoft.AspNetCore.App.Ref\3.1.8\ref\netcoreapp3.1\Microsoft.Extensions.ObjectPool.dll</HintPath>
-      </Reference>
-    </ItemGroup>
-
 </Project>
