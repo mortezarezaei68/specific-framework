@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using EventBase.DomainEvents;
-using Framework.CQRS.MediatRCommands;
+using Framework.EventBase.CommandHandlers;
 using MediatR;
 
 namespace EventBase.EventBusBase

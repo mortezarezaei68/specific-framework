@@ -1,22 +1,20 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Framework.CQRS.MediatRCommands;
 using Framework.Domain;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace EventBase.CommandHandlers
+namespace Framework.EventBase.CommandHandlers
 {
-    public class
-        TransactionalTransactionalCommandHandlerMediatR<TCommand, TResponse> : ITransactionalCommandHandlerMediatR<
+    public class TransactionalCommandHandlerMediatR<TCommand, TResponse> : ITransactionalCommandHandlerMediatR<
             TCommand, TResponse> where TCommand : IRequest<TResponse> where TResponse : ResponseCommand
     {
-        private readonly ILogger<TransactionalTransactionalCommandHandlerMediatR<TCommand, TResponse>> _logger;
+        private readonly ILogger<TransactionalCommandHandlerMediatR<TCommand, TResponse>> _logger;
         private readonly IUnitOfWork _unitOfWork;
 
-        public TransactionalTransactionalCommandHandlerMediatR(IUnitOfWork unitOfWork,
-            ILogger<TransactionalTransactionalCommandHandlerMediatR<TCommand, TResponse>> logger)
+        public TransactionalCommandHandlerMediatR(IUnitOfWork unitOfWork,
+            ILogger<TransactionalCommandHandlerMediatR<TCommand, TResponse>> logger)
         {
             _unitOfWork = unitOfWork;
             _logger = logger;

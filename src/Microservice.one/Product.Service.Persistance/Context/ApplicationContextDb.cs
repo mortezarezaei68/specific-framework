@@ -12,11 +12,11 @@ namespace Persistance.EfCore.Context
         {
         }
 
-        public DbSet<Product> Customers { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CustomerConfiguration).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ProductConfiguration).Assembly);
             base.OnModelCreating(modelBuilder);
         }
     }

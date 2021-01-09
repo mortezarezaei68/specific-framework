@@ -1,6 +1,6 @@
 using System;
-using EventBase.CommandHandlers;
 using EventBase.EventBusBase;
+using Framework.EventBase.CommandHandlers;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,11 +10,11 @@ namespace Microservice.Config
     {
         public static IServiceCollection BootstrapExtensionService(this IServiceCollection services)
         {
-            services.AddTransient(typeof(TransactionalTransactionalCommandHandlerMediatR<,>));
-            services.AddScoped<IEventBus, EventBus>();
+            services.AddTransient(typeof(TransactionalCommandHandlerMediatR<,>));
+             services.AddScoped<IEventBus, EventBus>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped(typeof(IPipelineBehavior<,>),
-                typeof(TransactionalTransactionalCommandHandlerMediatR<,>));
+                typeof(TransactionalCommandHandlerMediatR<,>));
             return services;
         }
     }

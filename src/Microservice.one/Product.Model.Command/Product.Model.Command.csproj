@@ -2,6 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>Product.Service.CQRS</RootNamespace>
     </PropertyGroup>
 
@@ -10,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\EventBase\EventBase.csproj" />
+      <ProjectReference Include="..\Framework.EventBase\Framework.EventBase.csproj" />
     </ItemGroup>
 
 

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,7 +12,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\EventBase\EventBase.csproj" />
+      <ProjectReference Include="..\..\Product.Command.Contract\Product.Command.Contract.csproj" />
+      <ProjectReference Include="..\Framework.EventBase\Framework.EventBase.csproj" />
       <ProjectReference Include="..\Product.Service.Persistance\Product.Service.Persistance.csproj" />
     </ItemGroup>
 

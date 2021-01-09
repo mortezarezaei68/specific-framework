@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Framework.Domain;
 
-namespace EventBase.CommandHandlers
+namespace Framework.EventBase.CommandHandlers
 {
     public class TransactionalCommandHandler<TCommand> : ICommandHandler<TCommand>
     {

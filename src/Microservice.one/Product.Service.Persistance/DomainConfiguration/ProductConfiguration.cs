@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistance.EfCore.DomainConfiguration
 {
-    public class CustomerConfiguration : IEntityTypeConfiguration<Product>
+    public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {

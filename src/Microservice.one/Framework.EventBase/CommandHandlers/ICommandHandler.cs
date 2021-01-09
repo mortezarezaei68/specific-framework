@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace EventBase.CommandHandlers
+namespace Framework.EventBase.CommandHandlers
 {
     public interface ICommandHandler<in TCommand>
     {
