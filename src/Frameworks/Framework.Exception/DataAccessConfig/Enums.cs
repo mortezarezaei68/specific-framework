@@ -18,7 +18,7 @@ namespace Framework.Exception.DataAccessConfig
         NotFound = 5
     }
 
-    public enum ReadResultStatus
+    public enum ResultStatus
     {
         [Display(Name = "عملیات با موفقیت انجام شد")]
         Success = 0,

@@ -9,12 +9,10 @@ namespace Bus.EventbusManager
     public class EventBus : IEventBus
     {
         private readonly IMediator _mediator;
-        private readonly IServiceLocator _serviceLocator;
 
-        public EventBus(IMediator mediator, IServiceLocator serviceLocator)
+        public EventBus(IMediator mediator)
         {
             _mediator = mediator;
-            _serviceLocator = serviceLocator;
         }
 
         public async Task<TResponse> Issue<TResponse>(IRequest<TResponse> command,
@@ -26,12 +24,6 @@ namespace Bus.EventbusManager
         public async Task DomainEventDispatcher<TDomainEvent>(TDomainEvent eventToDispatch) where TDomainEvent : DomainEvent
         {
             await _mediator.Publish(eventToDispatch);
-        }
-
-        public async Task Dispatch<T>(T command)
-        {
-            var handler = _serviceLocator.GetInstance<TransactionalCommandHandler<T>>();
-            await handler.Handle(command);
         }
     }
 }

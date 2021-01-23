@@ -12,6 +12,5 @@ namespace Bus.EventbusManager
             where TResponse : ResponseCommand;
 
         Task DomainEventDispatcher<TEvent>(TEvent eventToDispatch) where TEvent : DomainEvent;
-        Task Dispatch<T>(T command);
     }
 }

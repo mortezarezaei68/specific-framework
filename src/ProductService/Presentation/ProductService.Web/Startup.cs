@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Framework.Common;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ProductService.Config;
 
 namespace ProductService.Web
 {
@@ -23,7 +25,11 @@ namespace ProductService.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.DatabaseCustomization(Configuration);
+            services.BootstrapExtensionService();
+            services.AddEfCoreExtension();
             services.AddControllersWithViews();
+            services.AddCustomSwagger();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +52,7 @@ namespace ProductService.Web
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCustomSwagger();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

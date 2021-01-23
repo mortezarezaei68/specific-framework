@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Common.Exceptions;
 using Framework.Commands.CommandHandlers;
 using Framework.Domain;
 using Framework.Domain.UnitOfWork;
@@ -37,9 +38,9 @@ namespace Framework.EventBase.CommandHandlers
                 await _unitOfWork.CommitAsync(transaction);
                 return response;
             }
-            catch (Exception ex)
+            catch (AppException ex)
             {
-                throw ex;
+                throw;
             }
         }
     }

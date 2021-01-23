@@ -5,32 +5,32 @@ namespace Common.Exceptions
     public class NotFoundException : AppException
     {
         public NotFoundException()
-            : base(ApiResultCode.NotFound)
+            : base(ResultCode.NotFound)
         {
         }
 
         public NotFoundException(string message)
-            : base(ApiResultCode.NotFound, message)
+            : base(ResultCode.NotFound, message)
         {
         }
 
         public NotFoundException(object additionalData)
-            : base(ApiResultCode.NotFound, additionalData)
+            : base(ResultCode.NotFound, additionalData)
         {
         }
 
         public NotFoundException(string message, object additionalData)
-            : base(ApiResultCode.NotFound, message, additionalData)
+            : base(ResultCode.NotFound, message, additionalData)
         {
         }
 
         public NotFoundException(string message, Exception exception)
-            : base(ApiResultCode.NotFound, message, exception)
+            : base(ResultCode.NotFound, message, exception)
         {
         }
 
         public NotFoundException(string message, Exception exception, object additionalData)
-            : base(ApiResultCode.NotFound, message, exception, additionalData)
+            : base(ResultCode.NotFound, message, exception, additionalData)
         {
         }
     }

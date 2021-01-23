@@ -5,32 +5,32 @@ namespace Common.Exceptions
     public class BadRequestException : AppException
     {
         public BadRequestException()
-            : base(ApiResultCode.BadRequest)
+            : base(ResultCode.BadRequest)
         {
         }
 
         public BadRequestException(string message)
-            : base(ApiResultCode.BadRequest, message)
+            : base(ResultCode.BadRequest, message)
         {
         }
 
         public BadRequestException(object additionalData)
-            : base(ApiResultCode.BadRequest, additionalData)
+            : base(ResultCode.BadRequest, additionalData)
         {
         }
 
         public BadRequestException(string message, object additionalData)
-            : base(ApiResultCode.BadRequest, message, additionalData)
+            : base(ResultCode.BadRequest, message, additionalData)
         {
         }
 
         public BadRequestException(string message, Exception exception)
-            : base(ApiResultCode.BadRequest, message, exception)
+            : base(ResultCode.BadRequest, message, exception)
         {
         }
 
         public BadRequestException(string message, Exception exception, object additionalData)
-            : base(ApiResultCode.BadRequest, message, exception, additionalData)
+            : base(ResultCode.BadRequest, message, exception, additionalData)
         {
         }
     }

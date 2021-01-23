@@ -6,83 +6,83 @@ namespace Common.Exceptions
     public class AppException : Exception
     {
         public HttpStatusCode HttpStatusCode { get; set; }
-        public ApiResultCode ApiResultCode { get; set; }
+        public ResultCode ResultCode { get; set; }
         public object AdditionalData { get; set; }
 
         public AppException()
-            : this(ApiResultCode.ServerError)
+            : this(ResultCode.ServerError)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode)
-            : this(apiResultCode, null)
+        public AppException(ResultCode resultCode)
+            : this(resultCode, null)
         {
         }
 
         public AppException(string message)
-            : this(ApiResultCode.ServerError, message)
+            : this(ResultCode.ServerError, message)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, string message)
-            : this(apiResultCode, message, HttpStatusCode.InternalServerError)
+        public AppException(ResultCode resultCode, string message)
+            : this(resultCode, message, HttpStatusCode.InternalServerError)
         {
         }
 
         public AppException(string message, object additionalData)
-            : this(ApiResultCode.ServerError, message, additionalData)
+            : this(ResultCode.ServerError, message, additionalData)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, object additionalData)
-            : this(apiResultCode, null, additionalData)
+        public AppException(ResultCode resultCode, object additionalData)
+            : this(resultCode, null, additionalData)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, string message, object additionalData)
-            : this(apiResultCode, message, HttpStatusCode.InternalServerError, additionalData)
+        public AppException(ResultCode resultCode, string message, object additionalData)
+            : this(resultCode, message, HttpStatusCode.InternalServerError, additionalData)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, string message, HttpStatusCode httpStatusCode)
-            : this(apiResultCode, message, httpStatusCode, null)
+        public AppException(ResultCode resultCode, string message, HttpStatusCode httpStatusCode)
+            : this(resultCode, message, httpStatusCode, null)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, string message, HttpStatusCode httpStatusCode, object additionalData)
-            : this(apiResultCode, message, httpStatusCode, null, additionalData)
+        public AppException(ResultCode resultCode, string message, HttpStatusCode httpStatusCode, object additionalData)
+            : this(resultCode, message, httpStatusCode, null, additionalData)
         {
         }
 
         public AppException(string message, Exception exception)
-            : this(ApiResultCode.ServerError, message, exception)
+            : this(ResultCode.ServerError, message, exception)
         {
         }
 
         public AppException(string message, Exception exception, object additionalData)
-            : this(ApiResultCode.ServerError, message, exception, additionalData)
+            : this(ResultCode.ServerError, message, exception, additionalData)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, string message, Exception exception)
-            : this(apiResultCode, message, HttpStatusCode.InternalServerError, exception)
+        public AppException(ResultCode resultCode, string message, Exception exception)
+            : this(resultCode, message, HttpStatusCode.InternalServerError, exception)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, string message, Exception exception, object additionalData)
-            : this(apiResultCode, message, HttpStatusCode.InternalServerError, exception, additionalData)
+        public AppException(ResultCode resultCode, string message, Exception exception, object additionalData)
+            : this(resultCode, message, HttpStatusCode.InternalServerError, exception, additionalData)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, string message, HttpStatusCode httpStatusCode, Exception exception)
-            : this(apiResultCode, message, httpStatusCode, exception, null)
+        public AppException(ResultCode resultCode, string message, HttpStatusCode httpStatusCode, Exception exception)
+            : this(resultCode, message, httpStatusCode, exception, null)
         {
         }
 
-        public AppException(ApiResultCode apiResultCode, string message, HttpStatusCode httpStatusCode, Exception exception, object additionalData)
+        public AppException(ResultCode resultCode, string message, HttpStatusCode httpStatusCode, Exception exception, object additionalData)
             : base(message, exception)
         {
-            ApiResultCode = apiResultCode;
+            ResultCode = resultCode;
             HttpStatusCode = httpStatusCode;
             AdditionalData = additionalData;
         }

@@ -7,6 +7,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Frameworks\Framework.Commands\Framework.Commands.csproj" />
       <ProjectReference Include="..\ProductModel.Command\ProductModel.Command.csproj" />
+      <ProjectReference Include="..\ProductService.Domain\ProductService.Domain.csproj" />
     </ItemGroup>
 
 </Project>

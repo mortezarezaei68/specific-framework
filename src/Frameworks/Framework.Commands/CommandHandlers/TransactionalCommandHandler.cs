@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Common.Exceptions;
 using Framework.Domain.UnitOfWork;
 
 namespace Framework.Commands.CommandHandlers
@@ -23,10 +24,10 @@ namespace Framework.Commands.CommandHandlers
                 await _commandHandler.Handle(command);
                 await _unitOfWork.CommitAsync(transaction);
             }
-            catch (Exception e)
+            catch (AppException e)
             {
                 _unitOfWork.RollbackTransaction();
-                throw new Exception(e.Message, e);
+                throw;
             }
         }
     }

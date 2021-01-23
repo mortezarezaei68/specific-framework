@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using Common.Exceptions;
 using Framework.EF.RabbitMq;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
@@ -35,7 +36,7 @@ namespace Framework.Events.RabbitMq
 
                 channel.BasicPublish(exchangeName, routeKey, properties, sendBytes);
             }
-            catch (Exception ex)
+            catch (AppException ex)
             {
                 throw;
             }

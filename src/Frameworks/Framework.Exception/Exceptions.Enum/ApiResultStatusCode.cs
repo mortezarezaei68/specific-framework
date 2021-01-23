@@ -2,7 +2,7 @@
 
 namespace Common
 {
-    public enum ApiResultCode
+    public enum ResultCode
     {
         [Display(Name = "عملیات با موفقیت انجام شد")]
         Success = 0,

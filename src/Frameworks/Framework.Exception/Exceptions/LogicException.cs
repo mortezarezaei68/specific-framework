@@ -5,32 +5,32 @@ namespace Common.Exceptions
     public class LogicException : AppException
     {
         public LogicException() 
-            : base(ApiResultCode.LogicError)
+            : base(ResultCode.LogicError)
         {
         }
 
         public LogicException(string message) 
-            : base(ApiResultCode.LogicError, message)
+            : base(ResultCode.LogicError, message)
         {
         }
 
         public LogicException(object additionalData) 
-            : base(ApiResultCode.LogicError, additionalData)
+            : base(ResultCode.LogicError, additionalData)
         {
         }
 
         public LogicException(string message, object additionalData) 
-            : base(ApiResultCode.LogicError, message, additionalData)
+            : base(ResultCode.LogicError, message, additionalData)
         {
         }
 
         public LogicException(string message, Exception exception)
-            : base(ApiResultCode.LogicError, message, exception)
+            : base(ResultCode.LogicError, message, exception)
         {
         }
 
         public LogicException(string message, Exception exception, object additionalData)
-            : base(ApiResultCode.LogicError, message, exception, additionalData)
+            : base(ResultCode.LogicError, message, exception, additionalData)
         {
         }
     }
