@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ProductService.Persistance.Context;
+using ProductService.Persistence.Context;
 
 namespace ProductService.Config
 {

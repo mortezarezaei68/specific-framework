@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using Common;
 using Framework.Commands.CommandHandlers;
+using Framework.Exception.Exceptions.Enum;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 

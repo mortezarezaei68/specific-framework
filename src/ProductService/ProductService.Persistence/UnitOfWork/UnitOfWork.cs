@@ -5,7 +5,7 @@ using Framework.Domain.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace ProductService.Persistance.UnitOfWork
+namespace ProductService.Persistence.UnitOfWork
 {
     public class UnitOfWork<TContext> : IUnitOfWork where TContext : DbContext
     {

@@ -1,6 +1,7 @@
-﻿﻿using System;
+﻿using Common.Exceptions;
+using Framework.Exception.Exceptions.Enum;
 
-namespace Common.Exceptions
+namespace Framework.Exception.Exceptions
 {
     public class BadRequestException : AppException
     {
@@ -24,12 +25,12 @@ namespace Common.Exceptions
         {
         }
 
-        public BadRequestException(string message, Exception exception)
+        public BadRequestException(string message, System.Exception exception)
             : base(ResultCode.BadRequest, message, exception)
         {
         }
 
-        public BadRequestException(string message, Exception exception, object additionalData)
+        public BadRequestException(string message, System.Exception exception, object additionalData)
             : base(ResultCode.BadRequest, message, exception, additionalData)
         {
         }

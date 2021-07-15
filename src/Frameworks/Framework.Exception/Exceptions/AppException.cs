@@ -1,7 +1,8 @@
 ﻿﻿using System;
 using System.Net;
+ using Framework.Exception.Exceptions.Enum;
 
-namespace Common.Exceptions
+ namespace Common.Exceptions
 {
     public class AppException : Exception
     {

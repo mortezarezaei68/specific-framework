@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Common;
 using Framework.Commands.CommandHandlers;
+using Framework.Exception.Exceptions.Enum;
 using MediatR;
 using ProductModel.Command.ProductCommand;
 using ProductService.Domain;

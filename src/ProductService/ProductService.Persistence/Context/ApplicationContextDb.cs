@@ -1,9 +1,9 @@
 using Framework.Context;
 using Microsoft.EntityFrameworkCore;
 using ProductService.Domain;
-using ProductService.Persistance.DomainConfiguration;
+using ProductService.Persistence.DomainConfiguration;
 
-namespace ProductService.Persistance.Context
+namespace ProductService.Persistence.Context
 {
     public class ApplicationContextDb : CoreDbContext
     {

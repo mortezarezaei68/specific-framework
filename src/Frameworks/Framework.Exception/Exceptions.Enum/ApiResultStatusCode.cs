@@ -1,34 +1,34 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Common
+namespace Framework.Exception.Exceptions.Enum
 {
     public enum ResultCode
     {
-        [Display(Name = "عملیات با موفقیت انجام شد")]
+        [Display(Name = "it's done")]
         Success = 0,
 
-        [Display(Name = "خطایی در سرور رخ داده است")]
+        [Display(Name = "the server has a problem")]
         ServerError = 1,
 
-        [Display(Name = "پارامتر های ارسالی معتبر نیستند")]
+        [Display(Name = "the parameters have a problem")]
         BadRequest = 2,
 
-        [Display(Name = "یافت نشد")]
+        [Display(Name = "not found")]
         NotFound = 3,
 
-        [Display(Name = "لیست خالی است")]
+
+        [Display(Name = "list is empty")]
         ListEmpty = 4,
 
-        [Display(Name = "خطایی در پردازش رخ داد")]
+        [Display(Name = "error in execute")]
         LogicError = 5,
 
-        [Display(Name = "خطای احراز هویت")]
+        [Display(Name = "unauthorized")]
         UnAuthorized = 6,
+        
+                
+        [Display(Name = "your data not active")]
+        NotActive = 7,
 
-        [Display(Name = "رکورد تکراری")]
-        Duplicate = 7,
-
-        [Display(Name = "خطای کلید خارجی")]
-        ForeignKeyException = 8,
     }
 }

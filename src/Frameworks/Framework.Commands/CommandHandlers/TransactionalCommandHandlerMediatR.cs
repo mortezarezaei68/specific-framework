@@ -1,14 +1,12 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Common.Exceptions;
-using Framework.Commands.CommandHandlers;
-using Framework.Domain;
 using Framework.Domain.UnitOfWork;
+using Framework.Exception.Exceptions.Enum;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Framework.EventBase.CommandHandlers
+namespace Framework.Commands.CommandHandlers
 {
     public class TransactionalCommandHandlerMediatR<TCommand, TResponse> : ITransactionalCommandHandlerMediatR<
             TCommand, TResponse> where TCommand : IRequest<TResponse> where TResponse : ResponseCommand
@@ -31,16 +29,18 @@ namespace Framework.EventBase.CommandHandlers
             try
             {
                 if (_unitOfWork.HasActiveTransaction) return await next();
-                var transaction = await _unitOfWork.BeginTransactionAsync();
-
-                response = await next();
-
-                await _unitOfWork.CommitAsync(transaction);
-                return response;
+                using (var transaction = await _unitOfWork.BeginTransactionAsync())
+                {
+                  
+                    response = await next();
+                    await _unitOfWork.CommitAsync(transaction);
+                    return response;
+                }
             }
             catch (AppException ex)
             {
-                throw;
+                _unitOfWork.RollbackTransaction();
+                throw new AppException(ResultCode.BadRequest,ex.Message);
             }
         }
     }

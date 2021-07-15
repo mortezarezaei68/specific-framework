@@ -1,6 +1,6 @@
 using System;
-using Bus.EventbusManager;
-using Framework.EventBase.CommandHandlers;
+using Framework.Buses;
+using Framework.Commands.CommandHandlers;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 

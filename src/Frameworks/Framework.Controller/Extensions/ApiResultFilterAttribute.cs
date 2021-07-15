@@ -1,6 +1,7 @@
 using System.Linq;
 using Common;
 using Framework.Commands.CommandHandlers;
+using Framework.Exception.Exceptions.Enum;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
@@ -13,7 +14,7 @@ namespace Framework.Controller.Extensions
             if (context.Result is OkObjectResult okObjectResult)
             {
                 // var apiResult = new ApiResult<object>(true, ApiResultCode.Success, okObjectResult.Value);
-                var apiResult = new ResponseCommand<object>(true, ResultCode.Success, okObjectResult.Value);
+                var apiResult = okObjectResult.Value;
                 context.Result = new JsonResult(apiResult) { StatusCode = okObjectResult.StatusCode };
             }
             else if (context.Result is OkResult okResult)
@@ -40,7 +41,7 @@ namespace Framework.Controller.Extensions
                         break;
                 }
 
-                var apiResult = new ResponseCommand(false, ResultCode.BadRequest, message);
+                var apiResult = badRequestObjectResult.Value;
                 context.Result = new JsonResult(apiResult) { StatusCode = badRequestObjectResult.StatusCode };
             }
             else if (context.Result is ObjectResult notFoundObjectResult && notFoundObjectResult.StatusCode == 404)
@@ -50,7 +51,7 @@ namespace Framework.Controller.Extensions
                     message = notFoundObjectResult.Value.ToString();
 
                 //var apiResult = new ApiResult<object>(false, ApiResultStatusCode.NotFound, notFoundObjectResult.Value);
-                var apiResult = new ResponseCommand(false, ResultCode.NotFound, message);
+                var apiResult = notFoundObjectResult.Value;
                 context.Result = new JsonResult(apiResult) { StatusCode = notFoundObjectResult.StatusCode };
             }
             else if (context.Result is ContentResult contentResult)

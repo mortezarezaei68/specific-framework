@@ -1,5 +1,6 @@
 using Common;
 using Framework.Commands.CommandHandlers;
+using Framework.Exception.Exceptions.Enum;
 
 namespace ProductModel.Command.ProductCommand
 {

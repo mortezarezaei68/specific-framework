@@ -1,4 +1,3 @@
-using Framework.EventBase.CommandHandlers;
 using MediatR;
 
 namespace Framework.Commands.CommandHandlers

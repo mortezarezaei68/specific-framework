@@ -1,6 +1,7 @@
 ﻿﻿using System;
+ using Framework.Exception.Exceptions.Enum;
 
-namespace Common.Exceptions
+ namespace Common.Exceptions
 {
     public class LogicException : AppException
     {

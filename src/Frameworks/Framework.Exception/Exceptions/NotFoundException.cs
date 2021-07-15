@@ -1,6 +1,7 @@
-﻿﻿using System;
+﻿using Common.Exceptions;
+using Framework.Exception.Exceptions.Enum;
 
-namespace Common.Exceptions
+namespace Framework.Exception.Exceptions
 {
     public class NotFoundException : AppException
     {
@@ -24,12 +25,12 @@ namespace Common.Exceptions
         {
         }
 
-        public NotFoundException(string message, Exception exception)
+        public NotFoundException(string message, System.Exception exception)
             : base(ResultCode.NotFound, message, exception)
         {
         }
 
-        public NotFoundException(string message, Exception exception, object additionalData)
+        public NotFoundException(string message, System.Exception exception, object additionalData)
             : base(ResultCode.NotFound, message, exception, additionalData)
         {
         }

@@ -1,19 +1,20 @@
 using Framework.Domain.UnitOfWork;
 using ProductService.Domain;
-using ProductService.Persistance.Context;
-using ProductService.Persistance.UnitOfWork;
+using ProductService.Persistence.Context;
+using ProductService.Persistence.UnitOfWork;
 
-namespace ProductService.Persistance.Repository
+namespace ProductService.Persistence.Repository
 {
     public class ProductRepository : IProductRepository
     {
         private readonly ApplicationContextDb _context;
         private readonly UnitOfWork<ApplicationContextDb> _unitOfWork;
 
-            public ProductRepository(ApplicationContextDb context)
-        {
-            _context = context;
-        }
+            public ProductRepository(ApplicationContextDb context, UnitOfWork<ApplicationContextDb> unitOfWork)
+            {
+                _context = context;
+                _unitOfWork = unitOfWork;
+            }
 
         public Product Add(Product product)
         {

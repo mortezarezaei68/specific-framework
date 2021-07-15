@@ -1,19 +1,18 @@
 using System.Collections.Generic;
-using Framework.Domain.Events;
 
 namespace Framework.Domain.Core
 {
     public abstract class AggregateRoot<TKey> : Entity<TKey>, IAggregateRoot
     {
-        private List<DomainEvent> _domainEvents;
-        public IReadOnlyCollection<DomainEvent> DomainEvents => _domainEvents?.AsReadOnly();
-        public void AddDomainEvent(DomainEvent eventItem)
+        private List<IDomainEvent> _domainEvents;
+        public IReadOnlyCollection<IDomainEvent> DomainEvents => _domainEvents?.AsReadOnly();
+        public void AddDomainEvent(IDomainEvent eventItem)
         {
-            _domainEvents = _domainEvents ?? new List<DomainEvent>();
+            _domainEvents ??= new List<IDomainEvent>();
             _domainEvents.Add(eventItem);
         }
 
-        public void RemoveDomainEvent(DomainEvent eventItem)
+        public void RemoveDomainEvent(IDomainEvent eventItem)
         {
             _domainEvents?.Remove(eventItem);
         }

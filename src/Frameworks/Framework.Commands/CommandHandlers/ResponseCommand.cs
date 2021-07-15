@@ -3,6 +3,7 @@ using System.Linq;
 using Common;
 using Common.Utilities;
 using Framework.Exception.DataAccessConfig;
+using Framework.Exception.Exceptions.Enum;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -12,7 +13,7 @@ namespace Framework.Commands.CommandHandlers
     {
         public ResponseCommand( bool isSuccess, ResultCode resultCode, string message=null)
         {
-            Message = message ?? EnumExtensions.ToDisplay(resultCode);;
+            Message = message ?? EnumExtensions.ToDisplay(resultCode);
             IsSuccess = isSuccess;
             ResultCode = resultCode;
         }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Common;
 using Common.Exceptions;
 using Framework.Commands.CommandHandlers;
+using Framework.Exception.Exceptions.Enum;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;

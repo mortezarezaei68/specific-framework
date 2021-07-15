@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace ProductService.Persistance.Context
+namespace ProductService.Persistence.Context
 {
     public class ApplicationContextFactory : IDesignTimeDbContextFactory<ApplicationContextDb>
     {

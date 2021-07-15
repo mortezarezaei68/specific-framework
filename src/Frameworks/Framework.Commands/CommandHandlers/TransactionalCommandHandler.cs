@@ -27,7 +27,7 @@ namespace Framework.Commands.CommandHandlers
             catch (AppException e)
             {
                 _unitOfWork.RollbackTransaction();
-                throw;
+                throw e;
             }
         }
     }

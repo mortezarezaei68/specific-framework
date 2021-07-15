@@ -3,9 +3,9 @@ using Framework.Domain.UnitOfWork;
 using Microsoft.Extensions.DependencyInjection;
 using ProductCommand.Contract;
 using ProductService.Domain;
-using ProductService.Persistance.Context;
-using ProductService.Persistance.Repository;
-using ProductService.Persistance.UnitOfWork;
+using ProductService.Persistence.Context;
+using ProductService.Persistence.Repository;
+using ProductService.Persistence.UnitOfWork;
 
 namespace ProductService.Config
 {
