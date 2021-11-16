@@ -12,7 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Bus\Bus.csproj" />
       <ProjectReference Include="..\..\Frameworks\Framework.Buses\Framework.Buses.csproj" />
       <ProjectReference Include="..\..\Frameworks\Framework.Commands\Framework.Commands.csproj" />
       <ProjectReference Include="..\ProductCommand.Contract\ProductCommand.Contract.csproj" />
