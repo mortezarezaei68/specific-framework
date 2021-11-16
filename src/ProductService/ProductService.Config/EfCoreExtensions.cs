@@ -19,12 +19,12 @@ namespace ProductService.Config
             //     .AddClasses(classes => classes.AssignableTo(typeof(IDomainEventHandler<>)))
             //     .AsImplementedInterfaces()
             //     .WithScopedLifetime());
+            services.AddTransient<IProductRepository, ProductRepository>();
             services.Scan(scan => scan
                 .FromAssemblyOf<CreateProductTransactionalCommandHandler>()
                 .AddClasses(classes => classes.AssignableTo(typeof(ITransactionalCommandHandlerMediatR<,>)))
                 .AsImplementedInterfaces()
                 .WithScopedLifetime());
-            services.AddTransient<IProductRepository, ProductRepository>();
             return services;
         }
     }
