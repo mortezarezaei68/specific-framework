@@ -1,5 +1,4 @@
-# specific-framework
-![example workflow](https://github.com/mortezarezaei68/specific-framework/actions/workflows/buildwrkflw.yml/badge.svg)
-created with special patterns
-Created transactional command handler with `IPipelineBehavior<TRequest, TResponse>` for event bus and Create Commandbus with dispatcher for domainevents
-use these technics with reflections and check performance
+# specific framework
+## _my experience in developing time period_
+
+![Build Status](https://github.com/mortezarezaei68/specific-framework/actions/workflows/buildwrkflw.yml/badge.svg)
