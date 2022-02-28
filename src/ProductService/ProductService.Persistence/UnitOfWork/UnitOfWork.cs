@@ -23,7 +23,8 @@ namespace ProductService.Persistence.UnitOfWork
         {
             if (_currentTransaction != null) return null;
 
-            _currentTransaction = await _context.Database.BeginTransactionAsync(cancellationToken:new CancellationToken());
+            _currentTransaction =
+                await _context.Database.BeginTransactionAsync(cancellationToken: new CancellationToken());
 
             return _currentTransaction;
         }
