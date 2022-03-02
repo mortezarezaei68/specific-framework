@@ -8,7 +8,7 @@ in microservice project. I hope this can help you to extending your developing m
 #### Tech stack used : ASP.NET5, C# 9.0 and SQL Server, EntityFramework Core 5.0.1
 # Note
 ___
-* ***This project has been created for my recently project and it might be useful if you change some of them if you intend to use it.***
+* ***This project has been created for my recently project and it might be useful if you change features.***
 # Features
 ___
 * **Command Handler**
