@@ -57,12 +57,11 @@ namespace Framework.CircuitBreakers
             return _currentState.Invoke(func);
         }
 
-        public virtual async Task ExecuteAsync(Func<Task> func)
+        public Task ExecuteAsync(Func<Task> func)
         {
-            if (func == null) throw new ArgumentNullException("func");
-
-            await _currentState.InvokeAsync(func);
+            throw new NotImplementedException();
         }
+
 
         public virtual async Task<T> ExecuteAsync<T>(Func<Task<T>> func)
         {

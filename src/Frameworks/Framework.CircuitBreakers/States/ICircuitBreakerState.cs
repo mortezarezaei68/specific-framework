@@ -10,7 +10,6 @@ namespace Framework.CircuitBreakers.States
         void InvocationSucceeds();
         void Invoke(Action action);
         T Invoke<T>(Func<T> func);
-        Task x(Func<Task> func);
         Task<T> InvokeAsync<T>(Func<Task<T>> func);
     }
 }

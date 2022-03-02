@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Bus.EventbusManager
+namespace Framework.Buses
 {
     public interface IServiceLocator
     {
