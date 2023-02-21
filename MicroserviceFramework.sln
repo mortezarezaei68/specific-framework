@@ -30,6 +30,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.UnitOfWork", "src\Frameworks\Framework.UnitOfWork\Framework.UnitOfWork.csproj", "{DDE56695-FFAF-4E80-BD71-1B50AFED7EC4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{C2ED10DE-871E-4651-89C4-AEA2CFDD9136}"
+	ProjectSection(SolutionItems) = preProject
+		src\Documents\CommandHandler.md = src\Documents\CommandHandler.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
