@@ -6,11 +6,11 @@ on:
   push:
     branches: [ "master" ]
     paths:
-      - 'src/Frameworks/Framework.Common/**'
+      - 'src/Frameworks/Framework.infra.Common/**'
   pull_request:
     branches: [ "master" ]
     paths:
-      - 'src/Frameworks/Framework.Common/**'
+      - 'src/Frameworks/Framework.infra.Common/**'
 
 jobs:
   build:
@@ -39,9 +39,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build dotnet 
-      run: dotnet build src/Frameworks/Framework.Common/Framework.Common.csproj --configuration release /p:Version=${{ steps.gitversion.outputs.AssemblySemVer }} /p:AssemblyVersion=${{ steps.gitversion.outputs.AssemblySemVer }} /p:InformationalVersion=${{ steps.gitversion.outputs.InformationalVersion }} --no-restore 
+      run: dotnet build src/Frameworks/Framework.infra.Common/Framework.infra.Common.csproj --configuration release /p:Version=${{ steps.gitversion.outputs.AssemblySemVer }} /p:AssemblyVersion=${{ steps.gitversion.outputs.AssemblySemVer }} /p:InformationalVersion=${{ steps.gitversion.outputs.InformationalVersion }} --no-restore 
     - name: Package nuget
-      run: dotnet pack src/Frameworks/Framework.Common/Framework.Common.csproj --configuration release -o:package /p:PackageVersion=${{ steps.gitversion.outputs.AssemblySemVer }}
+      run: dotnet pack src/Frameworks/Framework.infra.Common/Framework.infra.Common.csproj --configuration release -o:package /p:PackageVersion=${{ steps.gitversion.outputs.AssemblySemVer }}
     - name: Push generated package to GitHub registry
       run: dotnet nuget push ./package/*.nupkg  --source https://nuget.pkg.github.com/mortezarezaei68/index.json   --api-key ${{ secrets.TOKEN }}
     - name: Push generated package to Nuget registry
