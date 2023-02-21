@@ -10,7 +10,7 @@ using Swashbuckle.AspNetCore.SwaggerUI;
 using Unchase.Swashbuckle.AspNetCore.Extensions.Extensions;
 using Unchase.Swashbuckle.AspNetCore.Extensions.Options;
 
-namespace Framework.Common.SwaggerExtensions
+namespace Framework.Infra.Common.SwaggerExtensions
 {
     public static class SwaggerExtension
     {

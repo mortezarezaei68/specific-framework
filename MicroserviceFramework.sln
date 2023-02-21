@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Context", "src\Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Exception", "src\Frameworks\Framework.Exception\Framework.Exception.csproj", "{859B3028-BB34-46D2-8ECE-F122C597E49F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Common", "src\Frameworks\Framework.Common\Framework.Common.csproj", "{1FBA25C3-AC68-4544-911D-88C90E6F37A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Infra.Common", "src\Frameworks\Framework.Infra.Common\Framework.Infra.Common.csproj", "{1FBA25C3-AC68-4544-911D-88C90E6F37A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Controller", "src\Frameworks\Framework.Controller\Framework.Controller.csproj", "{A4CE38BB-1D19-44EE-986D-1838538FD7F5}"
 EndProject

@@ -1,7 +1,7 @@
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Framework.Common
+namespace Framework.Infra.Common
 {
     public static class MediatRExtension
     {

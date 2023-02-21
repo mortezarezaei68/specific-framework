@@ -1,7 +1,4 @@
-using System;
-using Microsoft.AspNetCore.Http;
-
-namespace Framework.Common
+namespace Framework.Infra.Common
 {
     public interface ICurrentUser
     {

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using Common.Exceptions;
 using Framework.Exception.Exceptions.Enum;
 using Newtonsoft.Json;
 
-namespace Framework.Common
+namespace Framework.Infra.Common
 {
     public static class HttpExtension
     {

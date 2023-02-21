@@ -1,6 +1,6 @@
 using System.Security.Claims;
 
-namespace Framework.Common
+namespace Framework.Infra.Common
 {
     public static class ClaimExtension
     {

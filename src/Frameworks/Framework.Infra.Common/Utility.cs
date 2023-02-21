@@ -1,6 +1,4 @@
-using System;
-
-namespace Framework.Common
+namespace Framework.Infra.Common
 {
     public static class Utility
     {
