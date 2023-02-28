@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using Common;
-using Framework.Commands.CommandHandlers;
+using Framework.Infra.ManualCommandHandlers.CommandHandlers;
 using Framework.Exception.Exceptions.Enum;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -21,7 +21,7 @@ namespace Framework.Controller.Extensions
                 .ToList();
             
 
-            var apiResult = new ResponseCommand(false, ResultCode.BadRequest, String.Join(", ", errors.ToArray()));
+            var apiResult = new ResultCommand(false, ResultCode.BadRequest, String.Join(", ", errors.ToArray()));
             context.Result = new JsonResult(apiResult) { StatusCode = 400 };
         }
     }

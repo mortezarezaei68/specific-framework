@@ -1,6 +1,9 @@
+using System;
+using System.Linq;
+using Framework.Infra.Common;
 using Microsoft.AspNetCore.Http;
 
-namespace Framework.Infra.Common
+namespace Framework.Common
 {
     public class CurrentUser:ICurrentUser
     {

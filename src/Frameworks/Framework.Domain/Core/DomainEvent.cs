@@ -1,12 +1,15 @@
-using System;
-using MediatR;
-
-namespace Framework.Domain.Core
+﻿namespace Framework.Domain.Core
 {
-    public class DomainEvent : INotification
+    public abstract class DomainEvent
     {
-        Guid Id => Guid.NewGuid();
-        DateTime CreatedAt { get; set; }
-        string EventName { get; }
+        protected DomainEvent()
+        {
+            EventId = Guid.NewGuid();
+            EventPublishDateTime = DateTime.Now;
+        }
+
+        public Guid EventId { get; }
+
+        public DateTime EventPublishDateTime { get; }
     }
 }

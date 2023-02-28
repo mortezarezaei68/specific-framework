@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Framework.Commands\Framework.Commands.csproj" />
+      <ProjectReference Include="..\Framework.Infra.ManualCommandHandlers\Framework.Infra.ManualCommandHandlers.csproj" />
       <ProjectReference Include="..\Framework.Exception\Framework.Exception.csproj" />
     </ItemGroup>
 

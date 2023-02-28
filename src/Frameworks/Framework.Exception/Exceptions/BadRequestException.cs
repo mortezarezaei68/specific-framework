@@ -1,38 +1,20 @@
-﻿using Common.Exceptions;
 using Framework.Exception.Exceptions.Enum;
 
 namespace Framework.Exception.Exceptions
 {
-    public class BadRequestException : AppException
+    /// <summary>
+    /// Exception for bad input
+    /// </summary>
+    public class BadRequestException : BaseException
     {
-        public BadRequestException()
-            : base(ResultCode.BadRequest)
+        /// <summary>
+        /// Exception for bad input
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="code"></param>
+        public BadRequestException(string message, ResultCode? code = null) : base(message, code: code)
         {
-        }
 
-        public BadRequestException(string message)
-            : base(ResultCode.BadRequest, message)
-        {
-        }
-
-        public BadRequestException(object additionalData)
-            : base(ResultCode.BadRequest, additionalData)
-        {
-        }
-
-        public BadRequestException(string message, object additionalData)
-            : base(ResultCode.BadRequest, message, additionalData)
-        {
-        }
-
-        public BadRequestException(string message, System.Exception exception)
-            : base(ResultCode.BadRequest, message, exception)
-        {
-        }
-
-        public BadRequestException(string message, System.Exception exception, object additionalData)
-            : base(ResultCode.BadRequest, message, exception, additionalData)
-        {
         }
     }
 }

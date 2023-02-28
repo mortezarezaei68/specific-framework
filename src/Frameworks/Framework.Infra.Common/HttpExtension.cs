@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using Common.Exceptions;
+using Framework.Exception.Exceptions;
 using Framework.Exception.Exceptions.Enum;
 using Newtonsoft.Json;
 
@@ -12,7 +12,7 @@ namespace Framework.Infra.Common
             var myContent = JsonConvert.SerializeObject(body);
             var response = await client.PutAsync(url, new StringContent(myContent, Encoding.UTF8, "application/json"));
             if (!response.IsSuccessStatusCode)
-                throw new AppException(ResultCode.BadRequest,response.ReasonPhrase,response.StatusCode);
+                throw new AppException(response.ReasonPhrase,response.StatusCode,ResultCode.ServerError);
         }
 
         public static async Task<TResponse> Post<TRequest, TResponse>(this HttpClient client, string url, TRequest body)
@@ -25,7 +25,7 @@ namespace Framework.Infra.Common
             if (response.IsSuccessStatusCode)
                 return result;
 
-            throw new AppException(ResultCode.BadRequest,response.ReasonPhrase,response.StatusCode);
+            throw new AppException(response.ReasonPhrase,response.StatusCode,ResultCode.ServerError);
         }
 
         public static async Task Post<TRequest>(this HttpClient client, string url, TRequest body)
@@ -34,7 +34,7 @@ namespace Framework.Infra.Common
             var response = await client.PostAsync(url, new StringContent(myContent, Encoding.UTF8, "application/json"));
 
             if (!response.IsSuccessStatusCode)
-                throw new AppException(ResultCode.BadRequest,response.ReasonPhrase,response.StatusCode);
+                throw new AppException(response.ReasonPhrase,response.StatusCode,ResultCode.ServerError);
         }
 
         public static async Task<T> ReadAsJsonAsync<T>(this HttpContent content)
